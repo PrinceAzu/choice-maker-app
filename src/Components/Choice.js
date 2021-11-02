@@ -1,16 +1,15 @@
-import React from "react";
+import React from 'react'
 
-const choice = (props) => {
-    return (
-        <div className="Choice">
-            <p className="option__text" id={props.index}>
-                {props.index+1}. {props.choice}
-            </p>
-            <button className="btn btn-link" onClick={(e) => {props.removeSelected(e, props.index)}} >Clear</button>
-        </div>
-    );
+const Choice = (props) => {
+    
+  return (
+    <div className="choice">
+      <p className="choice__text" id={props.index}>
+        {props.index+1}. {props.choice}
+      </p>
+      <button className="btn btn-link" onClick={(e) => {props.removeSelected(e, props.index)}} >Remove</button>
+    </div>
+  )
 }
 
-export default choice;
-
-// {props.choice && <p>{props.choice} <button onClick={(e) =>props.removeSelected(e, props.index)}>Clear</button></p>}
+export default Choice;

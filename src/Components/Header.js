@@ -3,8 +3,8 @@ import React from "react";
 const header = (props) => {
     return (
         <div className="header">
-            <h2>{props.title}</h2>
-            <h5>{props.subtitle}</h5>
+            <h2 className="'header__title">{props.title}</h2>
+            <h5 className="'header__subtitle">{props.subtitle}</h5>
         </div>
     )
 }

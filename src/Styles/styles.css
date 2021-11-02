@@ -1,0 +1,8 @@
+@import './general/general.css';
+@import './components/header.css';
+@import './components/choice.css';
+@import './components/button.css';
+@import './components/container.css';
+@import './components/widget';
+@import './components/form.css';
+@import './components//modal';
